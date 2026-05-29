@@ -1,0 +1,113 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#0d0d0d;
+  color:white;
+  font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+  min-height:100vh;
+  padding:20px;
+}
+
+.app{
+  max-width:480px;
+  margin:auto;
+}
+
+.glass{
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:30px;
+  padding:20px;
+  margin-bottom:20px;
+}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.topbar h1{
+  font-size:32px;
+}
+
+.small{
+  opacity:.5;
+  margin-bottom:6px;
+}
+
+.balance h2{
+  font-size:42px;
+  margin-top:8px;
+}
+
+input,select{
+  width:100%;
+  margin-top:12px;
+  padding:16px;
+  border:none;
+  border-radius:18px;
+  background:#1a1a1a;
+  color:white;
+}
+
+button{
+  width:100%;
+  margin-top:14px;
+  padding:16px;
+  border:none;
+  border-radius:18px;
+  background:white;
+  color:black;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.expense-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px;
+  background:rgba(255,255,255,.04);
+  border-radius:18px;
+  margin-top:12px;
+}
+
+.expense-item small{
+  opacity:.5;
+}
+
+.delete-btn{
+  background:#ff5f5f;
+  color:white;
+  width:auto;
+  padding:10px 14px;
+  margin:0;
+}
+
+#insights{
+  margin-top:18px;
+  line-height:1.6;
+  opacity:.9;
+}
+
+.light-mode{
+  background:#f2f2f2;
+  color:black;
+}
+
+.light-mode .glass{
+  background:rgba(255,255,255,0.7);
+}
+
+.light-mode input,
+.light-mode select{
+  background:white;
+  color:black;
+}

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orion Finance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar glass">
+    <div>
+      <p class="small">Orion Finance</p>
+      <h1>Dashboard</h1>
+    </div>
+    <button id="themeToggle">☼</button>
+  </header>
+
+  <section class="balance glass">
+    <p>Saldo Atual</p>
+    <h2 id="balance">R$ 0,00</h2>
+  </section>
+
+  <section class="glass form-card">
+    <h3>Adicionar Despesa</h3>
+
+    <input type="text" id="name" placeholder="Nome da despesa">
+    <input type="number" id="value" placeholder="Valor">
+
+    <select id="category">
+      <option>Moradia</option>
+      <option>Contas</option>
+      <option>Streaming</option>
+      <option>Transporte</option>
+      <option>Alimentação</option>
+      <option>Academia</option>
+    </select>
+
+    <button id="addExpense">Salvar Despesa</button>
+  </section>
+
+  <section class="glass expenses-card">
+    <div class="title-row">
+      <h3>Despesas</h3>
+      <span id="expenseCount">0 itens</span>
+    </div>
+
+    <div id="expenseList"></div>
+  </section>
+
+  <section class="glass insights-card">
+    <div class="title-row">
+      <h3>Insights IA</h3>
+    </div>
+
+    <button id="generateInsights">Gerar Insights</button>
+
+    <div id="insights">
+      A IA analisará seus gastos aqui.
+    </div>
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
